@@ -20,7 +20,7 @@ const Software = () => {
             {title:"Church groups",description:"All church groups have their sub system for data management",image:""},
             {title:"Documents",description:"Store all important files and images so they don't get lost ",image:""},
           ].map((item,index)=>{
-            return <div onClick={()=>{
+            return <div key={index} onClick={()=>{
                      setselectedIndex(index)
             }} className={`text-start cursor-pointer py-6 px-8 ${index==selectedIndex && 'bg-white bg-opacity-5'}  rounded-l-xl`} >
               <div className="font-semibold text-lg pb-1 text-white">{item.title}</div>

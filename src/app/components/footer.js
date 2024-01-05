@@ -35,7 +35,7 @@ const Footer = () => {
       },
       ].map((item) => {
         return (
-          <div className="">
+          <div key={item.title} className="">
             <div className="text-lg font-semibold">{item.title}</div>
             <div className="text-sm">{item.description}</div>
           </div>

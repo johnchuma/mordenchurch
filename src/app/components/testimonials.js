@@ -36,7 +36,7 @@ const Testimonials = () => {
           description:"Calender nzima ya kanisa ipo kwenye mfumo hivyo ni rahisi sana kupanga matukio mengine ya dharura"
           }
         ].map((item)=>{
-          return <div className=" shadow-xl py-10 px-10 rounded-2xl ">
+          return <div key={item.name} className=" shadow-xl py-10 px-10 rounded-2xl ">
             <div className=" text-base ">{item.description}</div>
             <div className="flex justify-between pt-8">
               <div className="  ">

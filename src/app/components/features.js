@@ -28,7 +28,7 @@ const Features = () => {
         title:"Seamless Scheduling: Elevating Your Experience with our Events Calendar",
         description:"Unlock Seamless Event Management with Intuitive Planning and Easy Attendance Tracking– Your Ultimate Companion for a Stress-Free Calendar Experience."}
     ].map((item,index)=>{
-      return <div onClick={()=>{
+      return <div key={item.title} onClick={()=>{
         switch (index) {
           case 0:
           setxNumber("translate-x-[3rem]")
@@ -76,7 +76,7 @@ const Features = () => {
   <div className=" bg-gray-300 py-14 mx-auto rounded-3xl hidden md:block">
     <div className="flex overflow-hidden mx-0 space-x-10  ">
       {["","",""].map((item,index)=>{
-        return <div onMouseEnter={()=>{
+        return <div key={index} onMouseEnter={()=>{
           setselectedIndex(index)
           switch (index) {
             case 0:

@@ -19,8 +19,8 @@ const Pricing = () => {
              "Regular Data Backup",
              "Generous 100GB Data Storage",
              "Training for Staff and Congregation"
-            ].map((item)=>{
-              return <div className="flex items-center ">
+            ].map((item,index)=>{
+              return <div key={index} className="flex items-center ">
                   <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                    class="w-6 h-6 text-gray-500 ">
@@ -52,7 +52,7 @@ const Pricing = () => {
 "Generous 100GB Data Storage",
 "Training for Staff and Congregation"
 ].map((item)=>{
-              return <div className="flex items-center ">
+              return <div key={item} className="flex items-center ">
                   <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                    class="w-6 h-6 text-white ">

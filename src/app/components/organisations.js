@@ -14,7 +14,7 @@ const Organisations = () => {
         {image:"/eagt.png",title:"EAGT"},
           
       ].map((item)=>{
-             return <div className="flex space-x-2 items-center">
+             return <div key={item.title} className="flex space-x-2 items-center">
               <Image height={60} width={60} src={item.image}/>
                <h3 className="text-gray-800 font-bold text-2xl">{item.title}</h3>
              </div>
