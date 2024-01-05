@@ -54,7 +54,7 @@ const Footer = () => {
 
       <div className="py-16 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2  gap-y-6">
         <div className="text-sm order-2 md:order-1 text-center md:text-start">
-        {`Copyright ${year} Morden Church. All rights reserved.`}
+        Copyright 2024 Morden Church. All rights reserved.
         </div>
         <div className="flex space-x-4 justify-center md:justify-end order-1 md:order-2">
           <div className="cursor-pointer">
