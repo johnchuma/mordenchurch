@@ -15,7 +15,7 @@ const Navbar = () => {
         {title:"Testimonials",path:"#testimonials"},
         {title:"Pricings",path:"#pricings"},
         
-        ].map((item)=><a href={item.path}  className="hover:bg-indigo-50 py-1 px-2 transition-all duration-300 cursor-pointer rounded">{item.title}</a>)}
+        ].map((item)=><a key={item.title} href={item.path}  className="hover:bg-indigo-50 py-1 px-2 transition-all duration-300 cursor-pointer rounded">{item.title}</a>)}
             </div> 
             </div>
             
