@@ -4,25 +4,25 @@ const Footer = () => {
      <div className="w-11/12 mx-auto mb-16">
   <div className=" text-3xl md:text-4xl font-bold">Frequently Asked Questions</div>
   <div className="w-11/12 md:w-6/12  mt-4">
-    <div>If you can't find what you're looking for, email our support team, and if you're lucky, someone from Morden Church will get back to you.</div>
+    <div>If you can't find what you're looking for, email our support team, and if you're lucky, someone from Modern Church will get back to you.</div>
   </div>
   <div className="grid  grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10 mt-12">
     {[
       {
-        title: "Does Morden Church System handle mobile app development?",
+        title: "Does Modern Church System handle mobile app development?",
         description: "Absolutely! Our system includes a customized mobile app development with your church's name."
       },
       {
         title: "Is there a desktop-based management system included?",
-        description: "Yes, Morden Church System comes with a powerful desktop-based management system for comprehensive church administration."
+        description: "Yes, Modern Church System comes with a powerful desktop-based management system for comprehensive church administration."
       },
       {
-        title: "Does Morden Church System offer website development?",
+        title: "Does Modern Church System offer website development?",
         description: "Certainly! Our system includes the development of one website tailored to your church's needs."
       },
       {
         title: "Is staff and congregation training provided?",
-        description: "Absolutely! Morden Church System includes training sessions for both staff and congregation members to ensure everyone is well-versed with the system."
+        description: "Absolutely! Modern Church System includes training sessions for both staff and congregation members to ensure everyone is well-versed with the system."
     },
       {
         title: "Is website maintenance part of the package?",
@@ -47,14 +47,14 @@ const Footer = () => {
 
      <div className=" mt-40 ">
       <div className="text-center">
-      <div className="font-bold text-2xl">Morden <snap className="text-indigo-600">Church</snap></div>
-      <div className="text-sm py-5">+255627707434 | support@mordenchurch.com</div>
+      <div className="font-bold text-2xl">Modern <snap className="text-indigo-600">Church</snap></div>
+      <div className="text-sm py-5">+255627707434 | support@Modernchurch.com</div>
       </div>
      
 
       <div className="py-16 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2  gap-y-6">
         <div className="text-sm order-2 md:order-1 text-center md:text-start">
-        {`Copyright ©️ ${year} Morden Church. All rights reserved.`}
+        {`Copyright ©️ ${year} Modern Church. All rights reserved.`}
         </div>
         <div className="flex space-x-4 justify-center md:justify-end order-1 md:order-2">
           <div className="cursor-pointer">

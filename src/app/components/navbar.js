@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="flex space-x-8 items-center">
              <div className="flex items-center space-x-5 cursor-pointer">
                 <Image height={40} className="" width={40} src={"/logo.png"}/>
-             <div className="font-bold text-lg md:text-xl cursor-pointer  ">Morden <span className="text-indigo-600">Church</span> </div>
+             <div className="font-bold text-lg md:text-xl cursor-pointer  ">Modern <span className="text-indigo-600">Church</span> </div>
 
              </div>
             <div className="hidden md:block">
