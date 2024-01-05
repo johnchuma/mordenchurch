@@ -18,10 +18,16 @@ export default function Home() {
     <Hero/>
     <Organisations/>
     <Software/>
+    <div id="features">
     <Features/>
+    </div>
     <GetStarted/>
+    <div id="testimonials">
     <Testimonials/>
-    <Pricing/>
+      </div>
+      <div id="pricings">
+      <Pricing/> 
+      </div>
     <Footer/>
   </main>
   )

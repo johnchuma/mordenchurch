@@ -14,7 +14,7 @@ const Features = () => {
     {[
         {
         image:"/members.png",
-        subTitle:"Members report",
+        subTitle:"Members reports",
         title:"Simplifying Congregational Insight with our Advanced Report System.",
         description:"Stay Informed, Stay Connected, Stay Ahead – Explore the Power of Always Up-to-Date Reporting Features Tailored for Your Congregation"},
         {

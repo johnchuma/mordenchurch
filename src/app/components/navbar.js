@@ -11,7 +11,11 @@ const Navbar = () => {
              </div>
             <div className="hidden md:block">
             <div className="flex space-x-8 items-center text-sm  ">
-            {["Features","Testimonials","Pricings"].map((item)=><div className="hover:bg-indigo-50 py-1 px-2 transition-all duration-300 cursor-pointer rounded">{item}</div>)}
+            {[{title:"Features",path:"#features"},
+        {title:"Testimonials",path:"#testimonials"},
+        {title:"Pricings",path:"#pricings"},
+        
+        ].map((item)=><a href={item.path}  className="hover:bg-indigo-50 py-1 px-2 transition-all duration-300 cursor-pointer rounded">{item.title}</a>)}
             </div> 
             </div>
             
