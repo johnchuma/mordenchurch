@@ -4,9 +4,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Morden Church',
-  description: 'Official Morden Church company limited home page',
-}
+  title: 'Morden Church - Management System',
+  description: 'Empowering churches with a comprehensive management system for seamless administration, communication, and growth. Explore our services for efficient church operations.',
+};
+
 
 export default function RootLayout({ children }) {
   return (
