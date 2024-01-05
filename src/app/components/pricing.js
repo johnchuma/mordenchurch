@@ -82,7 +82,7 @@ const Pricing = () => {
 "YouTube Channel Maintenance",
 "Services from Other Plans"
 ].map((item)=>{
-              return <div className="flex items-center ">
+              return <div key={item} className="flex items-center ">
                   <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                    class="w-6 h-6 text-gray-500 ">
