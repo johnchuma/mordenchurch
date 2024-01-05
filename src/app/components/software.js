@@ -4,12 +4,12 @@ const Software = () => {
   const [selectedIndex, setselectedIndex] = useState(0);
 
     return ( <div>
-          <div className="w-screen py-32 mt-32  text-start md:text-center bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-600 via-indigo-600 to-indigo-400">
+          <div className="w-screen py-16 md:py-32 mt-8 md:mt-32  text-start md:text-center bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-600 via-indigo-600 to-indigo-400">
           
           
           <div className="text-white text-2xl md:text-5xl w-11/12 mx-auto font-bold mb-5 ">Everything you need to run your church.</div>
           <div className=" w-11/12 md:w-8/12 mx-auto">
-          <p className="text-white text-base">All-encompassing, from managing church members' information to overseeing finances, handling documents, and organizing calendars.</p>
+          <p className="text-white text-lg">All-encompassing, from managing church members' information to overseeing finances, handling documents, and organizing calendars.</p>
           </div>
      <div className="flex pt-12 md:pt-24 items-center">
       <div className="w-11/12 mx-auto md:w-4/12   md:pl-8  ">

@@ -1,10 +1,10 @@
 const Footer = () => {
     var year = new Date().getFullYear()
     return ( <div>
-     <div className="w-11/12 mx-auto mb-16">
+     <div className="w-11/12 mx-auto mb-4 mb:mb-16">
   <div className=" text-3xl md:text-4xl font-bold">Frequently Asked Questions</div>
   <div className="w-11/12 md:w-6/12  mt-4">
-    <div>If you can't find what you're looking for, email our support team, and if you're lucky, someone from Modern Church will get back to you.</div>
+    <div className="text-lg">If you can't find what you're looking for, email our support team, and if you're lucky, someone from Modern Church will get back to you.</div>
   </div>
   <div className="grid  grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10 mt-12">
     {[
@@ -45,14 +45,14 @@ const Footer = () => {
 </div>
 
 
-     <div className=" mt-40 ">
+     <div className=" mt-16 md:mt-40 ">
       <div className="text-center">
       <div className="font-bold text-2xl">Modern <snap className="text-indigo-600">Church</snap></div>
       <div className="text-sm py-5">+255627707434 | support@Modernchurch.com</div>
       </div>
      
 
-      <div className="py-16 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2  gap-y-6">
+      <div className="py-4 md:py-16 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2  gap-y-6">
         <div className="text-sm order-2 md:order-1 text-center md:text-start">
         {`Copyright ©️ ${year} Modern Church. All rights reserved.`}
         </div>

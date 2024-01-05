@@ -5,7 +5,7 @@ const Organisations = () => {
          <div>
      <div className="text-center">Trusted by Major Church Organizations</div>
      <div className="w-10/12 mx-auto">
-     <div className="grid grid-cols-2 md:grid-cols-5 space-y-4  my-5">
+     <div className="grid grid-cols-2 md:grid-cols-5 space-y-4  pt-5">
       {[
         {image:"/aic.png",title:"AIC"},
         {image:"/ccc.png",title:"CCC"},

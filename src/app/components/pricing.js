@@ -1,12 +1,12 @@
 const Pricing = () => {
     return ( <div>
-        <div className="bg-gray-900 py-40 my-32">
+        <div className="bg-gray-900 py-20 md:py-40 my-16 md:my-32">
      <div className=" text-3xl md:text-4xl font-bold md:text-center w-11/12 md:w-7/12 mx-auto text-white">Our subscription plans</div>
       <div className="w-11/12 md:w-7/12 mx-auto md:text-center">
       <div className="text-lg mt-4 text-gray-400">Choose any subscriptions that works with your budget.</div>
       </div>
       <div className="w-11/12 mx-auto py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-4 ">
        <div className=" px-8 py-10 rounded-3xl order-1">
             <div className="text-white text-5xl font-bold">35K<span className="text-sm">TSH/month</span></div>
             <div className="text-white pt-4 pb-2">Software only </div>

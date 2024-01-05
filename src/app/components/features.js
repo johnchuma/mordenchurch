@@ -7,7 +7,7 @@ const Features = () => {
     return (<div>
           <div className="w-11/12 md:w-6/12 text-start md:text-center mx-auto py-16 md:py-32">
      <div className="text-3xl  md:text-4xl font-bold pb-3">Simplify everyday church tasks.</div>
-     <div>Effortless Daily Tasks and Detailed Reports with Our Streamlined Software.</div>
+     <div className="text-lg">Effortless Daily Tasks and Detailed Reports with Our Streamlined Software.</div>
      </div>
   <div className="w-11/12 mx-auto">
   <div className="grid  grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-6 pb-24">

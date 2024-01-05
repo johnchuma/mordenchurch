@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Testimonials = () => {
     return ( <div>
-        <div className="pb-34 ">
+        <div className=" pb-0 md:pb-34 ">
       <div className=" text-3xl md:text-4xl w-11/12 md:w-7/12 mx-auto font-bold md:text-center">Adored by church leaders and members</div>
       <div className=" w-11/12 md:w-7/12 mx-auto md:text-center">
       <div className="text-lg mt-4">Our software is irresistibly simple, capturing hearts effortlessly. Simplicity, achieved by focusing on what truly matters, omitting unnecessary complexities.</div>
