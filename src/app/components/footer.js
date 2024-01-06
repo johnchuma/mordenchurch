@@ -4,7 +4,7 @@ const Footer = () => {
      <div className="w-11/12 mx-auto mb-4 mb:mb-16">
   <div className=" text-3xl md:text-4xl font-bold">Frequently Asked Questions</div>
   <div className="w-11/12 md:w-6/12  mt-4">
-    <div className="text-lg">If you can't find what you're looking for, email our support team, and if you're lucky, someone from Modern Church will get back to you.</div>
+    <div className="text-base">If you can't find what you're looking for, email our support team, and if you're lucky, someone from Modern Church will get back to you.</div>
   </div>
   <div className="grid  grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10 mt-12">
     {[
@@ -36,8 +36,8 @@ const Footer = () => {
       ].map((item) => {
         return (
           <div key={item.title} className="">
-            <div className="text-lg font-semibold">{item.title}</div>
-            <div className="text-sm">{item.description}</div>
+            <div className="text-lg font-medium">{item.title}</div>
+            <div className="text-sm py-1 text-gray-600">{item.description}</div>
           </div>
         );
       })}

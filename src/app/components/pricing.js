@@ -1,4 +1,19 @@
+import Link from "next/link"
+import { useContext, useEffect, useState } from "react";
+import { UserContext } from "../provider/auth_provider";
+import { getOrder } from "../controllers/order_controller";
+import { useRouter } from "next/navigation";
+import { login } from "../controllers/auth_controller";
 const Pricing = () => {
+  const {user} = useContext(UserContext);
+  const [order, setOrder] = useState(null);
+  useEffect(() => {
+   getOrder(user&&user.email).then((data)=>{
+      setOrder(data)
+   })
+  }, [user]);
+
+const router =  useRouter()
     return ( <div>
         <div className="bg-gray-900 py-20 md:py-40 my-16 md:my-32">
      <div className=" text-3xl md:text-4xl font-bold md:text-center w-11/12 md:w-7/12 mx-auto text-white">Our subscription plans</div>
@@ -7,7 +22,18 @@ const Pricing = () => {
       </div>
       <div className="w-11/12 mx-auto py-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-4 ">
-       <div className=" px-8 py-10 rounded-3xl order-1">
+       <div onClick={()=>{
+        if(user){
+          if(order){
+            router.push("/order")
+          }else{
+            router.push("/createorder/1")
+          }
+        }
+        else{
+          login()
+        }
+       }}  className=" px-8 py-10 rounded-3xl order-1 cursor-pointer">
             <div className="text-white text-5xl font-bold">35K<span className="text-sm">TSH/month</span></div>
             <div className="text-white pt-4 pb-2">Software only </div>
             <div className="text-gray-400">You will get full access to our software system with this plan</div>
@@ -37,7 +63,18 @@ const Pricing = () => {
 
           </div>
 
-          <div className=" px-8 py-10 rounded-3xl bg-indigo-600 order-first md:order-2">
+          <div onClick={()=>{
+        if(user){
+          if(order){
+            router.push("/order")
+          }else{
+            router.push("/createorder/2")
+          }
+        }
+        else{
+          login()
+        }
+       }}   className=" px-8 py-10 rounded-3xl bg-indigo-600 order-first md:order-2 cursor-pointer">
           <div className="text-white text-5xl font-bold">50K<span className="text-sm">TSH/month</span></div>
             <div className="text-white pt-4 pb-2">Software plus website</div>
             <div className="text-white">With this plan you will have both management system and website</div>
@@ -69,12 +106,23 @@ const Pricing = () => {
 
           </div>
 
-          <div className=" px-8 py-10 rounded-3xl order-3">
+          <div onClick={()=>{
+        if(user){
+          if(order){
+            router.push("/order")
+          }else{
+            router.push("/createorder/3")
+          }
+        }
+        else{
+          login()
+        }
+       }}  className=" px-8 py-10 rounded-3xl order-3 cursor-pointer">
           <div className="text-white text-5xl font-bold">65K<span className="text-sm">TSH/month</span></div>
             <div className="text-white pt-4 pb-2">Plus extra servicies</div>
             <div className="text-gray-400">With this plan you all services from other plans and other extra services</div>
             <div className="border text-sm border-gray-300 text-white rounded-full text-center py-2 my-8">Get started</div>
-          <div className="space-y-4 ">
+          <div  className="space-y-4 ">
           {[
 "Exclusive 5000TSH Designing Offer",
 "Instagram Account Management",
