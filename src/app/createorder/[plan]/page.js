@@ -1,17 +1,14 @@
 "use client"
 
-import Footer from "@/app/components/footer";
-import Navbar from "@/app/components/navbar";
-import { sendOrder } from "@/app/controllers/order_controller";
-import { auth } from "@/app/utils/firebase_helper";
+import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
+import { sendOrder } from "../../controllers/order_controller";
+import { auth } from "../../utils/firebase_helper";
 import { useParams } from "next/navigation";
 import Link from "next/link"
-// import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const CreatePage = () => {
-  //  const router =  useRouter();
-
     const {plan} = useParams()
     const [price, setPrice] = useState("");
     const [isLoading, setIsLoading] = useState(false);
